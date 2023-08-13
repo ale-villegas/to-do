@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main{
+background-color: #242424;
+display: flex;
+height: 100vh;
+width: 100%;
+justify-content: center;
+align-items: center;
+
+
+} 
+
+h1{
+    font-size: 1.1rem;
+
+    padding: 5px;
+}
+
+
+.full-container{ 
+max-width: 600px;
+    width: 90%;
+    min-height: 200px;
+    background-color: rgb(165, 165, 165);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding: 20px 0px;
+    gap: 5px
+}
+
+.full-container input {
+    width: 90%;
+    height: 35px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #242424;
+    color: rgb(211, 211, 211);
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+
+} 
+
+
+.form input:focus{
+    outline: none;
+}
+
+.form input::placeholder{
+    color: rgb(143, 143, 143);
+}
+
+
+.form{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5px
+
+}
+
+
+.form button{
+width: 72px;
+height: 35px;
+border-radius: 5px;
+border: none;
+background-color:#242424;
+color: white;
+cursor: pointer;
+}
+
+
+
+.style-checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+
+    background-color: rgb(52, 52, 53);
+    border-radius: 50%;
+    border: solid 1px rgb(172, 172, 172);
+    cursor: pointer;
+}
+
+
+.box-task {
+ 
+    width: 90%;
+    height: 40px;
+    margin: 5px;
+    background-color: #242424;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    color: rgb(172, 172, 172);
+    transition: background-color ease-in-out 0.2s;
+    
+}
+
+.box-task.done{
+    text-decoration: line-through;
+    background-color: #0e0e0e;
+}
+
+.box-task p {
+    width: 90%;
+    padding: 0 10px;
+    font-size: 0.9rem;
+}
+
+
+@media only screen and (max-width: 600px){
+.full-container{
+    width: 90%;
+}
+}
